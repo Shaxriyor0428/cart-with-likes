@@ -69,7 +69,7 @@ const Products = ({ data, title }) => {
         <h3 className="text-lg font-semibold text-gray-800 truncate">
           {product.title}
         </h3>
-        <p className="text-sm text-gray-600 mt-2">{product.description}</p>
+        <p className="text-sm text-gray-600 mt-2 line-clamp-2">{product.description}</p>
         <div className="flex justify-between items-center mt-4">
           <span className="text-lg font-bold text-gray-900">
             {product.price} $
