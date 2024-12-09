@@ -69,7 +69,12 @@ const Products = ({ data, title }) => {
         <h3 className="text-lg font-semibold text-gray-800 truncate">
           {product.title}
         </h3>
-        <p className="text-sm text-gray-600 mt-2 line-clamp-2">{product.description}</p>
+        <p
+          title={product.description}
+          className="text-sm text-gray-600 mt-2 line-clamp-2"
+        >
+          {product.description}
+        </p>
         <div className="flex justify-between items-center mt-4">
           <span className="text-lg font-bold text-gray-900">
             {product.price} $
@@ -87,7 +92,9 @@ const Products = ({ data, title }) => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-semibold  mb-6 text-center text-green-500">{title}</h2>
+      <h2 className="text-3xl font-semibold  mb-6 text-center text-green-500">
+        {title}
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {productItems}
       </div>
